@@ -14,6 +14,7 @@ def play_game_1(min_x=0, max_x=20):
     while game_ended == False:
         # select a guess at random
         guess = pick_value(poss_values)
+        poss_values.remove(guess)
         n += 1
         print()
         print(f"Guess #{n}:")
